@@ -12,7 +12,7 @@ public class Ascii {
 	public static String ascii(String kelime){
 		Zemberek zemberek = new Zemberek(new TurkiyeTurkcesi());
 		  AsciiToTurkish ascii=new AsciiToTurkish();
-		  
+		  // test
 	      if (!zemberek.kelimeDenetle(kelime)) {
 	    	  String[] klmDizi=zemberek.oner(kelime);
 	    	  
