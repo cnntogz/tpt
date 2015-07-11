@@ -11,14 +11,13 @@ import net.zemberek.tr.yapi.TurkiyeTurkcesi;
 public class Ascii {
 	public static String ascii(String kelime){
 		Zemberek zemberek = new Zemberek(new TurkiyeTurkcesi());
-		  AsciiToTurkish ascii=new AsciiToTurkish();
 		  // test
 	      if (!zemberek.kelimeDenetle(kelime)) {
 	    	  String[] klmDizi=zemberek.oner(kelime);
 	    	  
 	    	  for(int i=0;i<klmDizi.length;i++){
-	    		  if(ascii.AsciiToTurkish(kelime).equals(klmDizi[i])){
-	    			  return ascii.AsciiToTurkish(kelime);
+	    		  if(AsciiToTurkish.AsciiToTurkish(kelime).equals(klmDizi[i])){
+	    			  return AsciiToTurkish.AsciiToTurkish(kelime);
 	    		  }
 	    	  }
 	      }

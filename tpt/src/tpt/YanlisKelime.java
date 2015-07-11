@@ -13,13 +13,11 @@ public class YanlisKelime {
 	
 	public static String KelimeDenetim(String kelime){
 	 Zemberek zemberek = new Zemberek(new TurkiyeTurkcesi());
-	  AsciiToTurkish ascii=new AsciiToTurkish();
-	  
-      if (!zemberek.kelimeDenetle(kelime)) {
+	  if (!zemberek.kelimeDenetle(kelime)) {
     	  String[] klmDizi=zemberek.oner(kelime);
     	  
     	  for(int i=0;i<klmDizi.length;i++){
-    		  if(ascii.AsciiToTurkish(kelime).equals(klmDizi[i])){
+    		  if(AsciiToTurkish.AsciiToTurkish(kelime).equals(klmDizi[i])){
     			  return kelime;
     		  }
     	  }

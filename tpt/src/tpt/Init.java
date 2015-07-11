@@ -9,6 +9,7 @@ public class Init {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		 Zemberek z = new Zemberek(new TurkiyeTurkcesi());
+	        z.ayarlar();
 	        
 	       ReadFile.readerFolder();
 	       String kelime= YanlisKelime.KelimeDenetim("çalýþmmak");
